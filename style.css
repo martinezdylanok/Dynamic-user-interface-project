@@ -21,6 +21,16 @@ nav {
 
 .menu-title {
     font: 400 normal 1.5vw system-ui;
+    margin-top: 10px;
     color: white;
     cursor: pointer;
+}
+
+.menu-items-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: white;
 }
