@@ -9,13 +9,9 @@ body {
 
 .drop-down {
     position: relative;
-    background-color: rgb(11, 25, 118);
-    border-radius: 10px;
-    box-shadow: 1px 1px 26px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 1px 26px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 26px 0px rgba(0,0,0,0.75);
 }
 
-.drop-down-menu {
-    position: absolute;
+.drop-down-title {
+    background-color: rgb(11, 25, 118);
+    border: none;
 }
