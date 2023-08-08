@@ -30,7 +30,7 @@ body {
 .drop-down-menu {
     position: absolute;
     left: 0;
-    top: calc(100% + .25rem);
+    top: calc(100% + .20rem);
     background-color: white;
     padding: .75rem;
     border-radius: .25rem;
@@ -41,7 +41,7 @@ body {
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.drop-down > .drop-down-title:hover + .drop-down-menu {
+.drop-down-title:focus + .drop-down-menu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
