@@ -14,7 +14,7 @@ body {
 .drop-down-title {
     background-color: rgb(11, 25, 118);
     border: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .drop-down-menu {
