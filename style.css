@@ -22,8 +22,8 @@ body {
     transition: color 150ms ease-in-out;
 }
 
-.drop-down-title:hover,
-.drop-down-title:focus {
+.drop-down-title.hovered,
+.drop-down-title.focused {
     color: rgb(35, 35, 35);
 }
 
@@ -41,7 +41,7 @@ body {
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.drop-down-title:focus + .drop-down-menu {
+.drop-down-title.focused + .drop-down-menu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
