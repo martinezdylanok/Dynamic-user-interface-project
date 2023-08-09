@@ -11,12 +11,12 @@ const HAMBURGUER_MENU_DISPLAY = () => {
   });
 
   MENU_BUTTON.addEventListener("click", () => {
-    MENU_BUTTON.classList.add("clicked");
+    MENU_BUTTON.classList.add("focused");
   });
 
   BODY.addEventListener("click", (event) => {
     if (event.target !== MENU_BUTTON) {
-      MENU_BUTTON.classList.remove("clicked");
+      MENU_BUTTON.classList.remove("focused");
     }
   });
 };
