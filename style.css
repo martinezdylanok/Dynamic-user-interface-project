@@ -53,12 +53,25 @@ body {
     border: none;
     border-radius: .25rem;
     background-color: rgb(255, 255, 255);
-    z-index: 232;
     cursor: pointer;
     transition: fill 150ms ease-in-out;
 }
 
-.another-drop-down-button.hovered {
+.another-drop-down-button.hovered,
+.another-drop-down-button.focused {
     fill: rgb(105, 124, 247);
+}
+
+.another-drop-down-menu {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    width: 500px;
+}
+
+.another-drop-down-button.focused + .another-drop-down-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
