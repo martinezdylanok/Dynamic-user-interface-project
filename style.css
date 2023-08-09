@@ -72,9 +72,14 @@ body {
 .another-drop-down-button {
     border: none;
     border-radius: .25rem;
-    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    background-color: none;
     cursor: pointer;
-    transition: fill 150ms ease-in-out;
+    transition: fill 150ms ease-in-out, transform 0.3s ease-in-out;
+}
+
+.another-drop-down-button.focused {
+    transform: rotate(90deg);
 }
 
 .another-drop-down-button.hovered,
