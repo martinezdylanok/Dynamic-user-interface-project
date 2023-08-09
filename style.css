@@ -69,6 +69,17 @@ body {
     width: 500px;
 }
 
+.another-drop-down-menu > li {
+    font-weight: 500;
+    padding: .75rem;
+}
+
+.another-drop-down-menu > li:hover {
+    cursor: pointer;
+    border-radius: .25rem;
+    background-color: rgb(105, 124, 247);
+}
+
 .another-drop-down-button.focused + .another-drop-down-menu {
     opacity: 1;
     transform: translateY(0);
