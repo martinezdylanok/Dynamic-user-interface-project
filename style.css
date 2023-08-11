@@ -129,5 +129,13 @@ nav {
     width: 600px;
     height: 600px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-}  
+}
+
+.carousel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
 
