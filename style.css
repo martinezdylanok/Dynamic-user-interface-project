@@ -1,6 +1,6 @@
 @import url(reset.css);
 
-body {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
