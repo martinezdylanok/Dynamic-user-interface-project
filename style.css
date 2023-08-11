@@ -139,3 +139,12 @@ nav {
     z-index: 2;
 }
 
+.image-gallery {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 33px;
+    left: .5px;
+    z-index: 1;
+}
+
