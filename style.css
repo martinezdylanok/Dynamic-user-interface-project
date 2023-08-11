@@ -123,28 +123,29 @@ nav {
 }
 
 .image-carousel {
+    position: absolute;
+    top: -280px;
+    left: -250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    pointer-events: none;
+    opacity: 0;
     width: 600px;
     height: 600px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
 }
 
 .carousel-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     z-index: 2;
 }
 
 .image-gallery {
     position: absolute;
+    left: -1px;
     width: 600px;
     height: 600px;
-    top: 33px;
-    left: .5px;
     z-index: 1;
 }
 
