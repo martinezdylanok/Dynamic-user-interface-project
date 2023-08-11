@@ -5,6 +5,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 25px;
 }
 
 .drop-down,
@@ -112,5 +113,12 @@ nav {
     pointer-events: auto;
 }
 
-.
+.image-carousel-button {
+    border: none;
+    cursor: pointer;
+    border-radius: .25rem;
+    height: 33px;
+    color: rgb(105, 124, 247);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+}
 
