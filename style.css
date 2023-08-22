@@ -121,6 +121,12 @@ nav {
     height: 33px;
     color: rgb(105, 124, 247);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    transition: transform 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+.image-carousel-button.hovered {
+    color: rgb(105, 124, 247);
+    transform: scale(1.1,1.1);
 }
 
 .image-carousel {
