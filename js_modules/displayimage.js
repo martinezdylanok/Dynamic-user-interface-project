@@ -1,4 +1,4 @@
-import REMOVE_IMAGE_CLASS from "./removeimageclass";
+import REMOVE_IMAGE_CLASS from "./removeimageclass.js";
 
 const DISPLAY_IMG = () => {
   const IMAGES = document.querySelectorAll("img");
