@@ -141,6 +141,13 @@ nav {
     width: 300px;
     height: 300px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    transition: transform 400ms ease-in-out;
+}
+
+.image-carousel-button.focused + .image-carousel {
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(2, 2);
 }
 
 .carousel-button {
