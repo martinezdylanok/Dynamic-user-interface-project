@@ -124,7 +124,8 @@ nav {
     transition: transform 150ms ease-in-out, color 150ms ease-in-out;
 }
 
-.image-carousel-button.hovered {
+.image-carousel-button.hovered,
+.image-carousel-button.focused {
     color: rgb(105, 124, 247);
     transform: scale(1.1,1.1);
 }
