@@ -10,7 +10,9 @@ nav {
 .drop-down,
 .another-drop-down,
 .again-another-drop-down {
+    height: fit-content;
     position: relative;
+    top: 20px;
 }
 
 .drop-down-title {
