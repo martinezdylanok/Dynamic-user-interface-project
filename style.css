@@ -177,6 +177,10 @@ nav {
     z-index: 2;
 }
 
+.navigation-dot {
+    cursor: pointer;
+}
+
 img.displayed {
     display: flex;
     object-fit: cover;
