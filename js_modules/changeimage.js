@@ -1,21 +1,23 @@
 import DISPLAY_IMG from "./displayimage.js";
+import GLOBAL_VARIABLES from "./globalvariables.js";
 
 const CHANGE_IMAGE = () => {
   const CAROUSEL_BUTTON = document.querySelectorAll(
     ".image-carousel .carousel-button",
   );
-  const IMAGES = document.querySelectorAll("img");
-  let currentIndex = 0;
 
   CAROUSEL_BUTTON.forEach((BUTTON) => {
     BUTTON.addEventListener("click", () => {
       if (BUTTON.id === "next-image") {
-        currentIndex = (currentIndex + 1) % IMAGES.length;
+        GLOBAL_VARIABLES.currentIndex =
+          (GLOBAL_VARIABLES.currentIndex + 1) % GLOBAL_VARIABLES.IMAGES.length;
       } else {
-        currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
+        GLOBAL_VARIABLES.currentIndex =
+          (GLOBAL_VARIABLES.currentIndex - 1 + GLOBAL_VARIABLES.IMAGES.length) %
+          GLOBAL_VARIABLES.IMAGES.length;
       }
 
-      DISPLAY_IMG(currentIndex, IMAGES);
+      DISPLAY_IMG(GLOBAL_VARIABLES.currentIndex, GLOBAL_VARIABLES.IMAGES);
     });
   });
 };
