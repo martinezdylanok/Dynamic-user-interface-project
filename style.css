@@ -160,14 +160,12 @@ nav {
     position: absolute;
     left: -1px;
     width: 300px;
-    height: 300px;
+    height: 250px;
     z-index: 1;
 }
 
 .image-gallery img {
     display: none;
-    width: 100%;
-    height: 100%;
 }
 
 .navigation-dots {
@@ -176,4 +174,11 @@ nav {
     left: 50%;
     cursor: pointer;
     z-index: 2;
+}
+
+img.displayed {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
