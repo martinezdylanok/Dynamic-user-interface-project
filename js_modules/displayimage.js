@@ -1,7 +1,6 @@
 import REMOVE_IMAGE_CLASS from "./removeimageclass.js";
 
-const DISPLAY_IMG = (currentIndex) => {
-  const IMAGES = document.querySelectorAll("img");
+const DISPLAY_IMG = (currentIndex, IMAGES) => {
   REMOVE_IMAGE_CLASS();
 
   if (IMAGES[currentIndex]) {
