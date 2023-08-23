@@ -15,7 +15,7 @@ const CHANGE_IMAGE = () => {
         currentIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
       }
 
-      DISPLAY_IMG(currentIndex);
+      DISPLAY_IMG(currentIndex, IMAGES);
     });
   });
 };
