@@ -170,9 +170,10 @@ nav {
 
 .navigation-dots {
     position: absolute;
+    display: flex;
+    gap: 20px;
     top: 75%;
-    left: 50%;
-    cursor: pointer;
+    left: 35%;
     z-index: 2;
 }
 
