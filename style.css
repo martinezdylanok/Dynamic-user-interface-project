@@ -172,13 +172,23 @@ nav {
     position: absolute;
     display: flex;
     gap: 20px;
-    top: 75%;
+    top: 90%;
     left: 35%;
     z-index: 2;
 }
 
 .navigation-dot {
     cursor: pointer;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(105, 124, 247, 0.494);
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    transition: background-color .3s ease-in-out;
+}
+
+#hovered-dot {
+    background-color: rgb(105, 124, 247);
 }
 
 img.displayed {
