@@ -3,6 +3,8 @@ const CHANGE_IMAGE_CAROUSEL_STATUS = () => {
     ".image-carousel-button",
   );
 
+  const CLOSE_BUTTON = document.querySelector(".close-button");
+
   const BODY = document.querySelector("body");
 
   IMAGE_CAROUSEL_BUTTON.addEventListener("mouseover", () => {
@@ -17,7 +19,7 @@ const CHANGE_IMAGE_CAROUSEL_STATUS = () => {
   });
 
   BODY.addEventListener("click", (event) => {
-    if (event.target !== IMAGE_CAROUSEL_BUTTON) {
+    if (event.target === CLOSE_BUTTON) {
       IMAGE_CAROUSEL_BUTTON.classList.remove("focused");
     }
   });
