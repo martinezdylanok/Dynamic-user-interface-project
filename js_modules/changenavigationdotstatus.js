@@ -7,17 +7,19 @@ const CHANGE_NAVIGATION_DOT_STATE = () => {
     DOT.addEventListener("mouseover", () => {
       DOT.id = "hovered-dot";
       DOT.addEventListener("mouseout", () => {
-        DOT.removeAttribute("id");
+        if (DOT.id !== "focused-dot") {
+          DOT.removeAttribute("id");
+        }
       });
     });
 
     DOT.addEventListener("click", () => {
-      DOT.id("focused-dot");
+      DOT.id = "focused-dot";
     });
 
     BODY.addEventListener("click", (event) => {
       if (event.target !== DOT) {
-        DOT.removeAttribute("focused-dot");
+        DOT.removeAttribute("id");
       }
     });
   });
