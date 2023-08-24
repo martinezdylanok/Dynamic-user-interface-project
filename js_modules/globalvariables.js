@@ -2,6 +2,7 @@ class GlobalVariables {
   constructor(currentIndex) {
     this.currentIndex = currentIndex;
     this.IMAGES = document.querySelectorAll("img");
+    this.DOTS = document.querySelectorAll(".navigation-dot");
   }
 }
 
