@@ -1,4 +1,4 @@
-const CHANGE_IMAGE_CAROUSEL_STATUS = () => {
+const CHANGE_IMAGE_CAROUSEL_STATE = () => {
   const IMAGE_CAROUSEL_BUTTON = document.querySelector(
     ".image-carousel-button",
   );
@@ -25,4 +25,4 @@ const CHANGE_IMAGE_CAROUSEL_STATUS = () => {
   });
 };
 
-export default CHANGE_IMAGE_CAROUSEL_STATUS;
+export default CHANGE_IMAGE_CAROUSEL_STATE;
