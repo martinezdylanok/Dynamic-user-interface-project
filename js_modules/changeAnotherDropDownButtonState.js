@@ -1,4 +1,4 @@
-const HAMBURGER_MENU_DISPLAY = () => {
+const CHANGE_ANOTHER_DROP_DOWN_BUTTON_STATE = () => {
   const MENU_BUTTON = document.querySelector(".another-drop-down-button");
 
   const BODY = document.querySelector("body");
@@ -21,4 +21,4 @@ const HAMBURGER_MENU_DISPLAY = () => {
   });
 };
 
-export default HAMBURGER_MENU_DISPLAY;
+export default CHANGE_ANOTHER_DROP_DOWN_BUTTON_STATE;
