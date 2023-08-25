@@ -1,5 +1,5 @@
-import DISPLAY_IMG from "./displayimage.js";
-import GLOBAL_VARIABLES from "./globalvariables.js";
+import IMAGE_DISPLAY from "./imageDisplay.js";
+import GLOBAL_VARIABLES from "./globalVariables.js";
 
 const CHANGE_IMAGE = () => {
   const CAROUSEL_BUTTON = document.querySelectorAll(
@@ -17,7 +17,7 @@ const CHANGE_IMAGE = () => {
           GLOBAL_VARIABLES.IMAGES.length;
       }
 
-      DISPLAY_IMG(GLOBAL_VARIABLES.currentIndex, GLOBAL_VARIABLES.IMAGES);
+      IMAGE_DISPLAY(GLOBAL_VARIABLES.currentIndex, GLOBAL_VARIABLES.IMAGES);
     });
   });
 };
