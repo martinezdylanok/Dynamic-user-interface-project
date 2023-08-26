@@ -17,7 +17,11 @@ const CHANGE_IMAGE = () => {
           GLOBAL_VARIABLES.IMAGES.length;
       }
 
-      IMAGE_DISPLAY(GLOBAL_VARIABLES.currentIndex, GLOBAL_VARIABLES.IMAGES);
+      IMAGE_DISPLAY(
+        GLOBAL_VARIABLES.currentIndex,
+        GLOBAL_VARIABLES.IMAGES,
+        GLOBAL_VARIABLES.DOTS,
+      );
     });
   });
 };
