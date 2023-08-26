@@ -160,6 +160,12 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     z-index: 2;
+    transition: fill 400ms ease-in-out, border 400ms ease-in-out;
+}
+
+.close-button:hover {
+    fill: rgb(105, 124, 247);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .carousel-button {
