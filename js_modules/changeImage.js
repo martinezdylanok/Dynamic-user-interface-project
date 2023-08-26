@@ -1,6 +1,7 @@
 import IMAGE_DISPLAY from "./imageDisplay.js";
 import GLOBAL_VARIABLES from "./globalVariables.js";
 import AUTO_MOVE_FORWARD from "./autoMoveForward.js";
+import NAV_DOT_HANDLER from "./navDotHandler.js";
 
 const CHANGE_IMAGE = () => {
   const CAROUSEL_BUTTON = document.querySelectorAll(".carousel-button");
@@ -24,6 +25,14 @@ const CHANGE_IMAGE = () => {
         GLOBAL_VARIABLES.DOTS,
       );
 
+      interval = setInterval(AUTO_MOVE_FORWARD, 5000);
+    });
+  });
+
+  GLOBAL_VARIABLES.DOTS.forEach((DOT, dotIndex) => {
+    DOT.addEventListener("click", () => {
+      NAV_DOT_HANDLER(dotIndex);
+      clearInterval(interval);
       interval = setInterval(AUTO_MOVE_FORWARD, 5000);
     });
   });
