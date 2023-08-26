@@ -165,6 +165,12 @@ nav {
 .carousel-button {
     cursor: pointer;
     z-index: 2;
+    fill: rgb(105, 124, 247);
+    transition: fill 400ms ease-in-out;
+}
+
+.carousel-button:hover {
+    fill: white;
 }
 
 .image-gallery {
