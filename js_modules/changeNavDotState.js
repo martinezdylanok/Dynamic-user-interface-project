@@ -16,12 +16,6 @@ const CHANGE_NAVIGATION_DOT_STATE = () => {
     DOT.addEventListener("click", () => {
       DOT.id = "focused-dot";
     });
-
-    BODY.addEventListener("click", (event) => {
-      if (event.target !== DOT) {
-        DOT.removeAttribute("id");
-      }
-    });
   });
 };
 
