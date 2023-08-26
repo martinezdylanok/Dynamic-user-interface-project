@@ -1,13 +1,14 @@
 import IMAGE_DISPLAY from "./imageDisplay.js";
 import GLOBAL_VARIABLES from "./globalVariables.js";
+import AUTO_MOVE_FORWARD from "./autoMoveForward.js";
 
 const CHANGE_IMAGE = () => {
-  const CAROUSEL_BUTTON = document.querySelectorAll(
-    ".image-carousel .carousel-button",
-  );
+  const CAROUSEL_BUTTON = document.querySelectorAll(".carousel-button");
+  let interval = setInterval(AUTO_MOVE_FORWARD, 5000);
 
   CAROUSEL_BUTTON.forEach((BUTTON) => {
     BUTTON.addEventListener("click", () => {
+      clearInterval(interval);
       if (BUTTON.id === "next-image") {
         GLOBAL_VARIABLES.currentIndex =
           (GLOBAL_VARIABLES.currentIndex + 1) % GLOBAL_VARIABLES.IMAGES.length;
@@ -22,6 +23,8 @@ const CHANGE_IMAGE = () => {
         GLOBAL_VARIABLES.IMAGES,
         GLOBAL_VARIABLES.DOTS,
       );
+
+      interval = setInterval(AUTO_MOVE_FORWARD, 5000);
     });
   });
 };
